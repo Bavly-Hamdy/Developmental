@@ -1,0 +1,106 @@
+.App {
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent; /* خلفية شفافة */
+    padding: 10px;
+    position: absolute; /* لجعل الشريط فوق المحتوى */
+    z-index: 1; /* تأكد من أنه فوق العناصر الأخرى */
+  }
+  
+  .logo {
+    width: 80px; /* أو أي حجم تريده */
+    height: auto;
+  }
+  
+  .background {
+    background-image: url('/public/background-image.png'); /* استخدم المسار الصحيح للصورة */
+    background-size: cover; /* تغطية كامل الشاشة */
+    background-position: center; /* مركز الخلفية */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+    padding: 20px;
+    color: white; /* يمكنك تغيير اللون حسب الحاجة */
+    min-height: 100vh; /* ضمان ملء الشاشة */
+    overflow: hidden; /* منع أي تجاوزات */
+  }
+  
+  h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    font-size: 2em;
+  }
+  
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%; /* توسيع عرض الجدول */
+    margin-bottom: 40px; /* إضافة مسافة بين الجداول */
+    border-radius: 8px; /* زوايا دائرية */
+    overflow: hidden; /* لتطبيق الزوايا الدائرية بشكل صحيح */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* إضافة ظل للجدول */
+  }
+  
+  th, td {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* حدود أقل شفافية */
+    padding: 15px; /* زيادة الحشو */
+    text-align: left;
+    transition: background-color 0.3s; /* تأثير الانتقال */
+  }
+  
+  thead {
+    background-color: #d7ab45; /* تغيير لون الخلفية عند التحويم */
+  }
+  
+  /* تأثير hover */
+  tr:hover {
+    background-color: #d7ab45; /* تغيير لون الخلفية عند التحويم */
+  }
+  
+  th {
+    background-color: rgba(255, 255, 255, 0.2); /* خلفية لرؤوس الجدول */
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: rgba(255, 255, 255, 0.05); /* خلفية للخلايا */
+  }
+  
+  td:first-child, th:first-child {
+    width: 50px; /* عرض ثابت للرقم */
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .thank-you {
+    font-family: 'Brush Script MT', cursive; /* استخدم خطًا يشبه الكتابة بالقلم */
+    font-size: 40px; /* حجم الخط */
+    color: #d7ab45; /* لون الخط */
+  }
+  
+  /* Styles for Visit button */
+  a.button {
+    display: inline-block; /* يجعل الزر في خط واحد */
+    padding: 10px 20px; /* إضافة حشو */
+    background-color: #d7ab45; /* لون الخلفية */
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة خط تحت النص */
+    border-radius: 5px; /* زوايا دائرية */
+    transition: background-color 0.3s, transform 0.2s; /* تأثير الانتقال */
+  }
+  
+  a.button:hover {
+    background-color: #c69a38; /* لون الخلفية عند التحويم */
+    transform: scale(1.05); /* تأثير تكبير عند التحويم */
+  }
